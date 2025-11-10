@@ -1,0 +1,29 @@
+<!-- Write a JavaScript program to create clock with a timing event. -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clock</title>
+
+        <style>
+            body {
+                text-align: center;
+                padding: 40vh 0;
+                font-size: 5rem;
+            }
+        </style>
+    </head>
+
+    <body onload="setClock()">
+        <span id="clock"></span>
+
+        <script type="text/javascript">
+            function setClock() {
+                setInterval(() => document.getElementById("clock").textContent = new Date().toLocaleTimeString(), 1000);
+            }
+        </script>
+    </body>
+
+</html>

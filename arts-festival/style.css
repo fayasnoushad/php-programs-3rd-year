@@ -1,0 +1,33 @@
+.container {
+    margin: 20px auto;
+    width: 80%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid grey;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: yellow;
+}
+
+.event {
+    background-color: cyan;
+}
+
+.total,
+.grand-total {
+    font-weight: bold;
+}
+
+.grand-total {
+    background-color: grey;
+}

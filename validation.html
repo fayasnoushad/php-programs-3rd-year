@@ -1,0 +1,103 @@
+<!-- Write JavaScript code for form validation in a web page with the following form controls:
+(i) Input controls: single-line text, password, multi-line text
+(ii) Buttons: submit and reset. -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Password Validation</title>
+        <script>
+            function validateForm() {
+                const name1 = document.getElementById("fname").value;
+                const name2 = document.getElementById("lname").value;
+                const pw1 = document.getElementById("pswd1").value;
+                const pw2 = document.getElementById("pswd2").value;
+
+                // First name validation
+                if (name1 == "") {
+                    document.getElementById("blankMsg").innerHTML = "**Fill the first name";
+                    return false;
+                }
+                if (!isNaN(name1)) {
+                    document.getElementById("blankMsg").innerHTML = "**Only characters are allowed";
+                    return false;
+                }
+
+                // Last name validation
+                if (!isNaN(name2)) {
+                    document.getElementById("charMsg").innerHTML = "**Only characters are allowed";
+                    return false;
+                }
+
+                // Password validation
+                if (pw1 == "") {
+                    document.getElementById("message1").innerHTML = "**Fill the password please!";
+                    return false;
+                }
+                if (pw2 == "") {
+                    document.getElementById("message2").innerHTML = "**Enter the password please!";
+                    return false;
+                }
+
+                if (pw1.length < 8) {
+                    document.getElementById("message1").innerHTML = "**Password length must be at least 8 characters";
+                    return false;
+                }
+
+                if (pw1.length > 15) {
+                    document.getElementById("message1").innerHTML = "**Password length must not exceed 15 characters";
+                    return false;
+                }
+
+                if (pw1 != pw2) {
+                    document.getElementById("message2").innerHTML = "**Passwords are not same";
+                    return false;
+                }
+                alert("Your password created successfully");
+                document.write("JavaScript form has been submitted successfully!");
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1 style="color:green">Account</h1>
+        <h3>Password validation</h3>
+
+        <form onsubmit="return validateForm()">
+            <table>
+                <tr>
+                    <td>Full Name*</td>
+                    <td><input type="text" id="fname"></td>
+                    <td><span id="blankMsg" style="color:red"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Last Name*</td>
+                    <td><input type="text" id="lname"></td>
+                    <td><span id="charMsg" style="color:red"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Create Password*</td>
+                    <td><input type="password" id="pswd1"></td>
+                    <td><span id="message1" style="color:red"></span></td>
+                </tr>
+
+                <tr>
+                    <td>Confirm Password*</td>
+                    <td><input type="password" id="pswd2"></td>
+                    <td><span id="message2" style="color:red"></span></td>
+                </tr>
+
+                <tr>
+                    <td><input type="submit" value="Submit"></td>
+                    <td><button type="reset" value="Reset">Reset</button></td>
+                </tr>
+            </table>
+        </form>
+
+    </body>
+
+</html>

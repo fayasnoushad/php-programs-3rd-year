@@ -1,0 +1,38 @@
+<!-- Write a JavaScript program to store different colors in an array
+and change the background color of the page using this array elements -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Colors Array</title>
+    </head>
+
+    <body>
+        <h3>Change background color</h3>
+        <h4>Select a color</h4>
+
+        <div>
+            <button onclick="changeBgColor(0)">Red</button>
+            <button onclick="changeBgColor(1)">Blue</button>
+            <button onclick="changeBgColor(2)">Green</button>
+            <button onclick="changeBgColor(3)">Yellow</button>
+            <button onclick="changeBgColor(4)">Cyan</button>
+            <button onclick="changeBgColor(-1)">Reset</button>
+        </div>
+
+        <script type="text/javascript">
+            let colors = ["red", "blue", "green", "yellow", "cyan"];
+            function changeBgColor(index) {
+                if (index === -1) {
+                    document.body.style.backgroundColor = "";
+                    return;
+                }
+                document.body.style.backgroundColor = colors[index];
+            }
+        </script>
+    </body>
+
+</html>

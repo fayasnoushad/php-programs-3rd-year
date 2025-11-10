@@ -1,0 +1,35 @@
+<!-- Write a JavaScript program to find all years in which 1st January is a Sunday between a given range (eg:- between 2010 and 2017). -->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sundays</title>
+    </head>
+
+    <body>
+        Enter two years to find all years between them in which January 1 falls on a Sunday.
+        <br /><br />
+        Year 1: <input type="number" id="year1" />
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        Year 2: <input type="number" id="year2" />
+        <br /><br /><button onclick="getYears()">Get Years</button>
+        <p id="years"></p>
+
+        <script type="text/javascript">
+            function getYears() {
+                let year1 = Number(document.getElementById("year1").value)
+                let year2 = Number(document.getElementById("year2").value)
+                if (year1 > year2) return alert("Enter valid years.");
+                let yearsElement = document.getElementById("years");
+                years.innerHTML = "<br>";
+                for (let year = year1; year <= year2; year++) {
+                    var day = new Date(year, 0, 1);
+                    if (day.getDay() === 0) yearsElement.innerHTML += "<br>" + year;
+                }
+            }
+        </script>
+    </body>
+
+</html>
