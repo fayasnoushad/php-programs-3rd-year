@@ -9,7 +9,7 @@
 
     <body>
         <h1>Resume Details</h1>
-        <form action="./resume.php" method="post">
+        <form action="" method="post">
             Name: <input type="text" name="name" /><br />
             Age: <input type="number" name="age" /><br />
             Phone Number: <input type="number" name="phone" /><br />
@@ -20,3 +20,13 @@
     </body>
 
 </html>
+
+<?php
+if ($_POST) {
+    echo "<h1>Biodata</h1>";
+    echo "Name: " . $_POST["name"] . "<br/>";
+    echo "Age: " . $_POST["age"] . "<br/>";
+    echo "Phone Number: " . $_POST["phone"] . "<br/>";
+    echo "Email: " . $_POST["email"] . "<br/>";
+}
+?>
