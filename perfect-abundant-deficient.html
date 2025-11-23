@@ -1,0 +1,40 @@
+<!-- Write JavaScript code to check whether a given number is perfect, abundant or deficient.
+Use alert box todisplay the output. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Perfect, Abundant or Deficient</title>
+    </head>
+
+    <body>
+        <h3>Perfect, Abundant or Deficient</h3>
+        <form onsubmit="check()">
+            <label>Enter a number:</label>
+            <input id="number" type="number">
+            <input type="submit" />
+        </form>
+        <script>
+            function check() {
+                let number = parseInt(document.getElementById("number").value);
+                if (isNaN(number) || number <= 0) {
+                    alert("Please enter a positive integer.");
+                    return;
+                }
+                let sum = 0;
+                for (let i = 1; i < number; i++) {
+                    if (number % i === 0) sum += i;
+                }
+                let result = number + " is a ";
+                if (sum === number) result += "Perfect number";
+                else if (sum > number) result += "Abundant number";
+                else result += "Deficient number";
+                alert(result);
+            }
+        </script>
+    </body>
+
+</html>
