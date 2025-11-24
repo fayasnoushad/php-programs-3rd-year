@@ -14,24 +14,16 @@ and change the background color of the page using this array elements -->
         <h3>Change background color</h3>
         <h4>Select a color</h4>
 
-        <div>
-            <button onmouseover="changeBgColor(0)">Red</button>
-            <button onmouseover="changeBgColor(1)">Blue</button>
-            <button onmouseover="changeBgColor(2)">Green</button>
-            <button onmouseover="changeBgColor(3)">Yellow</button>
-            <button onmouseover="changeBgColor(4)">Cyan</button>
-            <button onmouseover="changeBgColor(-1)">Reset</button>
+        <div id="buttons">
+            <button onclick="changeBgColor('')">RESET</button>
         </div>
 
         <script type="text/javascript">
-            let colors = ["red", "blue", "green", "yellow", "cyan"];
-            function changeBgColor(index) {
-                if (index === -1) {
-                    document.body.style.backgroundColor = "";
-                    return;
-                }
-                document.body.style.backgroundColor = colors[index];
-            }
+            const colors = ["red", "blue", "green", "yellow", "cyan"];
+            const buttons = document.getElementById("buttons");
+            for (const color of colors)
+                buttons.innerHTML += `<button onclick="changeBgColor('${color}')">${color.toUpperCase()}</button>&nbsp;`;
+            const changeBgColor = (color) => document.body.style.backgroundColor = color;
         </script>
     </body>
 
