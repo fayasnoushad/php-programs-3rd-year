@@ -5,38 +5,38 @@
     <head>
         <title>Image Gallery</title>
         <style>
-            h3 {
+            h1 {
                 text-align: center;
+                text-decoration: underline;
             }
 
             #gallery {
-                margin: 1rem 4rem;
+                margin: 2rem 4rem;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                gap: 1rem;
+                gap: 2rem;
                 justify-content: center;
                 align-items: center;
             }
 
             #gallery>img {
-                width: 100px;
-                height: 100px;
+                width: 300px;
+                height: 300px;
                 border-radius: 10px;
             }
         </style>
     </head>
 
     <body>
-        <h3>Image Gallery</h3>
-        <div id="gallery">
-            <img src="img.png" alt="Image" />
-            <img src="img.png" alt="Image" />
-            <img src="img.png" alt="Image" />
-            <img src="img.png" alt="Image" />
-            <img src="img.png" alt="Image" />
-            <img src="img.png" alt="Image" />
-        </div>
+        <h1>Image Gallery</h1>
+        <div id="gallery"></div>
     </body>
+    <script>
+        let images = ["img.png", "img.png", "img.png", "img.png", "img.png", "img.png"];
+        for (image of images) {
+            document.getElementById("gallery").innerHTML += `<img src=${image} alt='Image' />`
+        }
+    </script>
 
 </html>
