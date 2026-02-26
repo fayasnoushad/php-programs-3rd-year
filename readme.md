@@ -73,11 +73,10 @@ h6 {
 }
 ```
 
-
-
 ---
 
 ## Design a table that displays the details of participants in the arts festival of your college in
+
 a table format.Format the table using CSS. The table should include rows that display the
 number of participants for each event just below the rows for a particular event, and the
 grand total of the number of all participants for all events as the last row. The table should
@@ -191,11 +190,10 @@ th {
 }
 ```
 
-
-
 ---
 
 ## Fruits List
+
 Design an HTML page to display a list of fruits (at least 7 fruits) in a list box and a sumit
 button with caption Select Fruit so that a user can select his/her favourite fruit. Design
 another HTML page that displaythe name of the fruit selected by the user by using an
@@ -264,11 +262,10 @@ the user back to the fruit selection page.
 </html>
 ```
 
-
-
 ---
 
 ## Session Handling using PHP:
+
 Design a PHP page to implement a login screen using sessions. Login details are to be
 verified from theserver side with values stored in a database.
 
@@ -317,7 +314,7 @@ if (isset($_POST['login'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $query = "SELECT * FROM users 
+    $query = "SELECT * FROM users
               WHERE username='$username' AND password='$password'";
     $result = mysqli_query($conn, $query);
 
@@ -365,11 +362,10 @@ session_destroy();
 header("Location: login.php");
 ```
 
-
-
 ---
 
 ## Update / Delete data in a table using PHP:
+
 Create a table accounts with columns accountno, name and amount. Write a php program for delete andupdate operation on account table.
 
 **accounts.php**
@@ -415,8 +411,8 @@ Create a table accounts with columns accountno, name and amount. Write a php pro
         $name = $_POST['name'];
         $amount = $_POST['amount'];
 
-        $update = "UPDATE accounts 
-               SET name='$name', amount='$amount' 
+        $update = "UPDATE accounts
+               SET name='$name', amount='$amount'
                WHERE accountno=$accountno";
 
         if (mysqli_query($conn, $update)) {
@@ -464,8 +460,6 @@ Create a table accounts with columns accountno, name and amount. Write a php pro
 </html>
 ```
 
-
-
 ---
 
 ## Write JavaScript code to find the area and circumference of a circle.
@@ -506,11 +500,10 @@ Create a table accounts with columns accountno, name and amount. Write a php pro
 </html>
 ```
 
-
-
 ---
 
 ## Basic Calculator using JavaScript:
+
 Design a form that accepts two integers with four buttons with captions Add, Subtract, Multiply,
 Divide. Include JavaScript code to perform addition, subtraction, multiplication and dividision
 of the given numbers when these buttons are clicked. Use output element to display the results.
@@ -566,8 +559,6 @@ when these buttons are clicked. Use output element to display the results. -->
 </html>
 ```
 
-
-
 ---
 
 ## Timer Events: Design a webpage that displays a digital clock using JavaScript.
@@ -605,8 +596,6 @@ when these buttons are clicked. Use output element to display the results. -->
 
 </html>
 ```
-
-
 
 ---
 
@@ -647,11 +636,10 @@ and change the background color of the page using this array elements -->
 </html>
 ```
 
-
-
 ---
 
 ## Form submission and processing:
+
 Design an HTML page that includes a form containing an input element of text type and
 accepts a numberas input and a submit button with caption Generate Fibonacci Series.
 Include PHP scripts in the HTML pageso that, when the user clicks the submit button,
@@ -707,8 +695,6 @@ if ($_POST) {
 ?>
 ```
 
-
-
 ---
 
 ## Design a simple image gallery using CSS and JavaScript.
@@ -759,11 +745,10 @@ if ($_POST) {
 </html>
 ```
 
-
-
 ---
 
 ## File Upload using PHP:
+
 Design a PHP page to illustrate the use of file upload \E2\80\93 for uploading files of a specified type
 with a specifiedsize to the webserver.
 
@@ -823,8 +808,6 @@ if (isset($_POST["upload"])) {
 ?>
 ```
 
-
-
 ---
 
 ## Write JavaScript code to check whether a given number is perfect, abundant or deficient. Use alert box todisplay the output.
@@ -871,11 +854,10 @@ if (isset($_POST["upload"])) {
 </html>
 ```
 
-
-
 ---
 
 ## Store date and time in a cookie
+
 Write php script to store current date/time in a cookie and display
 the last visited date time on the web page upon opening/reopening of the page.
 Dislpay a message you are visiting this page for the first time if it is so.
@@ -901,11 +883,10 @@ $currentDate = date("d-m-Y H:i:s");
 setcookie($cookie_name, $currentDate, time() + (365 * 24 * 60 * 60));
 ```
 
-
-
 ---
 
 ## Basic login script using PHP:
+
 Create a login page using database.
 
 **login.php**
@@ -937,11 +918,10 @@ if (isset($_POST['login'])) {
 </form>
 ```
 
-
-
 ---
 
 ## Insert data into a table and Fetch and display data from a table using PHP:
+
 Create a table products with columns itemcode, itemname, unitprice. Design an HTML
 page for acceptinguser input for itemcode, itemname and unit price with submit and refresh
 buttons. Include PHP script in thepage to insert the data submitted by the user into the table
@@ -1023,8 +1003,6 @@ and display all the rows in the product table in a tabular format.
 </html>
 ```
 
-
-
 ---
 
 ## Design a web page that displays your resume with your photograph (without using tables), in a neat format.Use internal CSS to format the content.
@@ -1082,8 +1060,6 @@ and display all the rows in the product table in a tabular format.
 
 </html>
 ```
-
-
 
 ---
 
@@ -1220,11 +1196,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 ```
 
-
-
 ---
 
 ## Query a table in a database using PHP:
+
 Create a table students with columns rollno, name, mark, grade. Insert at least 7 rows in the
 table. Write aPHP script to display the mark list of a student by accepting the rollno of the
 student.
@@ -1264,8 +1239,6 @@ if (isset($_POST['rollno'])) {
     <input type="submit" value="Show Mark List">
 </form>
 ```
-
-
 
 ---
 
@@ -1310,11 +1283,10 @@ if (isset($_POST['rollno'])) {
 </html>
 ```
 
-
-
 ---
 
 ## Write JavaScript code for form validation in a web page with the following form controls:
+
 (i) Input controls: single-line text, password, multi-line text
 (ii) Buttons: submit and reset.
 
@@ -1423,7 +1395,4 @@ if (isset($_POST['rollno'])) {
 </html>
 ```
 
-
-
 ---
-
