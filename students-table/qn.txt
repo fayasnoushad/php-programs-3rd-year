@@ -1,0 +1,4 @@
+Query a table in a database using PHP:
+Create a table students with columns rollno, name, mark, grade. Insert at least 7 rows in the
+table. Write aPHP script to display the mark list of a student by accepting the rollno of the
+student.

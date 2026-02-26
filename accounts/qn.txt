@@ -1,0 +1,2 @@
+Update / Delete data in a table using PHP:
+Create a table accounts with columns accountno, name and amount. Write a php program for delete andupdate operation on account table.

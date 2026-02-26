@@ -3,6 +3,7 @@ and accepts a numberas input and a submit button with caption Generate Fibonacci
 Include PHP scripts in the HTML page so that, when the user clicks the submit button,
 Fibonacci series up to the number entered by the user is displayed.-->
 
+
 <!DOCTYPE html>
 <html lang="en">
 

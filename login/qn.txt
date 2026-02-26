@@ -1,0 +1,2 @@
+Basic login script using PHP:
+Create a login page using database.

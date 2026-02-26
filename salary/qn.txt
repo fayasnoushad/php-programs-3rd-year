@@ -1,0 +1,23 @@
+Print Salary
+
+Design an HTML page that includes a form containing input elements
+for accepting name, basic salaryand designation of an employee and a
+submit button with caption Print Salary. Include PHP script in the HTML page
+to calculate and display net salary based on the following conditions.
+
+Designation - Conveyance allowance - Extra allowance
+Manager - 1000 - 500
+Supervisor - 750 - 200
+Clerk - 500 - 100
+Peon - 250
+
+HRA=25% of basic salary
+Gross=basic salary +HRA + conveyance + extra
+
+Income Tax
+Gross<=2500 => 0%
+2500<gross<=4000 => 3%
+4000<gross<=5000 => 5%
+gross > 5000 => 8%
+
+Net = Gross – Income Tax

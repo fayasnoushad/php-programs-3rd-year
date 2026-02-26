@@ -1,0 +1,6 @@
+Fruits List
+Design an HTML page to display a list of fruits (at least 7 fruits) in a list box and a sumit
+button with caption Select Fruit so that a user can select his/her favourite fruit. Design
+another HTML page that displaythe name of the fruit selected by the user by using an
+embedded PHP script. This HTML page should also display a hyper link which will navigate
+the user back to the fruit selection page.

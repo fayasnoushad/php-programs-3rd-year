@@ -1,0 +1,5 @@
+Design a table that displays the details of participants in the arts festival of your college in
+a table format.Format the table using CSS. The table should include rows that display the
+number of participants for each event just below the rows for a particular event, and the
+grand total of the number of all participants for all events as the last row. The table should
+have appropriate column headings and page should include proper headings.

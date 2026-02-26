@@ -1,0 +1,1 @@
+Write a JavaScript program to store different colors in an array and change thebackground color of the pageusing this array elements

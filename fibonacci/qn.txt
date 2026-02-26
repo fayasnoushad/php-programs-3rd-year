@@ -1,0 +1,5 @@
+Form submission and processing:
+Design an HTML page that includes a form containing an input element of text type and
+accepts a numberas input and a submit button with caption Generate Fibonacci Series.
+Include PHP scripts in the HTML pageso that, when the user clicks the submit button,
+Fibonacci series up to the number entered by the user is displayed.

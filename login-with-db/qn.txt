@@ -1,0 +1,3 @@
+Session Handling using PHP:
+Design a PHP page to implement a login screen using sessions. Login details are to be
+verified from theserver side with values stored in a database.

@@ -1,0 +1,5 @@
+Basic Calculator using JavaScript:
+Design a form that accepts two integers with four buttons with captions Add, Subtract, Multiply,
+Divide. Include JavaScript code to perform addition, subtraction, multiplication and dividision
+of the given numbers when these buttons are clicked. Use output element to display the results.
+Use field sets and legends to

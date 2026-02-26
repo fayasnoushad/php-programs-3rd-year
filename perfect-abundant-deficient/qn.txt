@@ -1,0 +1,1 @@
+Write JavaScript code to check whether a given number is perfect, abundant or deficient. Use alert box todisplay the output.

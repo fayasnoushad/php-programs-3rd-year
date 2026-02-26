@@ -1,8 +1,3 @@
-<!-- Write php script to store current date/time in a cookie and display
-the last visited date time on the web page upon opening/reopening of the page.
-Dislpay a message you are visiting this page for the first time if it is so.
-Otherwise display the last visited date and time. -->
-
 <?php
 // Name of cookie
 $cookie_name = "lastVisit";

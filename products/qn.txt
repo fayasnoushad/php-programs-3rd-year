@@ -1,0 +1,5 @@
+Insert data into a table and Fetch and display data from a table using PHP:
+Create a table products with columns itemcode, itemname, unitprice. Design an HTML
+page for acceptinguser input for itemcode, itemname and unit price with submit and refresh
+buttons. Include PHP script in thepage to insert the data submitted by the user into the table
+and display all the rows in the product table in a tabular format.

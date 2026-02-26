@@ -1,0 +1,1 @@
+Design a webpage to invert the behavior of the <h1> to <h6> tags using external CSS. Use internal styledefintions to add border colours green, red and blue to h1, h2 and h3 elements respectively. Use inline styledefintions to change font colours of h4, h5 and h6 elements as green, red and blue respectively.
